@@ -1,0 +1,43 @@
+@import "_obnulenie";
+
+.wrapper {
+}
+.content { background-color: black;
+   width: 100%;
+   padding: 100px 0;
+
+&__circle {
+   width: 200px;
+   height: 200px;
+   background-color: white;
+   position: relative;
+   left: 0;
+   border-radius: 50%;
+   animation-name: white-circle ;
+   animation-duration: 3s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+
+
+   &:hover{
+   animation-play-state: paused;
+   }
+
+
+
+
+@keyframes white-circle{
+   0%{
+      left: 0%;
+   }
+   50%{
+      background-color:rgb(187, 255, 0);
+      border-radius: 10px;
+   }
+   100%{
+      left: 100%;
+   }
+}
+}
+}
